@@ -1,0 +1,6 @@
+package com.example.proyectofinal.domain.model
+
+import platform.Foundation.NSDate
+import platform.Foundation.timeIntervalSince1970
+
+actual fun ahoraMillis(): Long = (NSDate().timeIntervalSince1970 * 1000).toLong()
