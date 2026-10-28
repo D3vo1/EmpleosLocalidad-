@@ -11,14 +11,7 @@ import com.example.proyectofinal.domain.model.Servicio
 import com.example.proyectofinal.domain.model.Usuario
 import com.example.proyectofinal.domain.model.Vacante
 
-/**
- * Negocios de ejemplo de Jiquilpan para desarrollar y presentar la app.
- * Los nombres y teléfonos son ficticios (lada 353, con 555 para que no sean reales).
- *
- * Cuentas demo:
- *  - cliente@demo.mx / demo1234 (cliente)
- *  - negocio@demo.mx / demo1234 (dueño de "Taller Don Chema")
- */
+
 object DatosSemilla {
 
     data class Contenido(
@@ -33,7 +26,7 @@ object DatosSemilla {
     const val NEGOCIO_DEMO = "negocio@demo.mx"
     const val CONTRASENA_DEMO = "demo1234"
 
-    // 1 de octubre de 2026 en milisegundos; las fechas de reseñas y vacantes se calculan desde aquí.
+
     private const val BASE_FECHA = 1_790_812_800_000L
     private const val DIA = 86_400_000L
 

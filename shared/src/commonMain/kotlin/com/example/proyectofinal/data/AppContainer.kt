@@ -15,10 +15,7 @@ import com.example.proyectofinal.domain.usecase.RegistrarClienteUseCase
 import com.example.proyectofinal.domain.usecase.RegistrarNegocioUseCase
 import com.example.proyectofinal.domain.usecase.ValidarFormularioUseCase
 
-/**
- * Inyección de dependencias manual: crea el repositorio una sola vez
- * y entrega los casos de uso ya conectados a él. La UI solo conoce esta clase.
- */
+
 class AppContainer(private val repositorio: RepositorioMemoria = RepositorioMemoria()) {
     // Descubrimiento (Persona A)
     val obtenerNegocios = ObtenerNegociosUseCase(repositorio)

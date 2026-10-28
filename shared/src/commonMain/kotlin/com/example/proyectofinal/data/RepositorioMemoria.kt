@@ -10,11 +10,7 @@ import com.example.proyectofinal.domain.repository.GestionNegocioRepository
 import com.example.proyectofinal.domain.repository.NegocioRepository
 import com.example.proyectofinal.domain.repository.UsuarioRepository
 
-/**
- * Implementación en memoria de los cuatro repositorios del domain.
- * Los datos viven mientras la app está abierta; al cerrarla se vuelve a los datos semilla.
- * Con un backend real, solo se reemplaza esta clase: domain y UI no cambian.
- */
+
 class RepositorioMemoria(semilla: DatosSemilla.Contenido = DatosSemilla.crear()) :
     NegocioRepository, GestionNegocioRepository, UsuarioRepository, FavoritosRepository {
 
